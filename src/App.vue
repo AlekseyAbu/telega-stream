@@ -1,28 +1,70 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <ManyLikes />
+    <Invite /> -->
+    <!-- <StopLive /> -->
+    <!-- <CloseBroadcast /> -->
+    <!-- <StopLiveEnd /> -->
+    <!-- <InviteInClose /> -->
+    <!-- <TrialPeriod /> -->
+    <!-- <EndTrialPeriod /> -->
+    <!-- <Chat /> -->
+    <!-- <ChatInPrivate />
+    <ChatInPrivateModal /> -->
+    <!-- <StopLiveUser /> -->
+    <!-- <EnterGroupPrice /> -->
+    <!-- <EnterGroupPriceModal /> -->
+    <!-- <EnterGroupPriceLoading /> -->
+    <!-- <StopPrivateStream /> -->
+    <GiveGift />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import ManyLikes from './components/ManyLikes.vue'
+// import Invite from './components/Invite.vue'
+// import StopLive from './components/StopLive.vue'
+// import CloseBroadcast from './components/CloseBroadcast.vue'
+// import StopLiveEnd from './components/StopLiveEnd.vue'
+// import InviteInClose from './components/InviteInClose.vue'
+// import TrialPeriod from './components/TrialPeriod.vue'
+// import EndTrialPeriod from './components/EndTrialPeriod.vue'
+// import Chat from './components/Chat.vue'
+// import ChatInPrivate from './components/ChatInPrivate.vue'
+// import ChatInPrivateModal from './components/ChatInPrivateModal.vue'
+// import StopLiveUser from './components/StopLiveUser.vue'
+// import EnterGroupPrice from './components/EnterGroupPrice.vue'
+// import EnterGroupPriceModal from './components/EnterGroupPriceModal.vue'
+// import EnterGroupPriceLoading from './components/EnterGroupPriceLoading.vue'
+// import StopPrivateStream from './components/StopPrivateStream.vue'
+import GiveGift from './components/GiveGift.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // ManyLikes,
+    // Invite,
+    // StopLive,
+    // CloseBroadcast,
+    // StopLiveEnd,
+    // InviteInClose,
+    // TrialPeriod,
+    // EndTrialPeriod,
+    // Chat,
+    // ChatInPrivate,
+    // ChatInPrivateModal,
+    // StopLiveUser
+    // EnterGroupPrice,
+    // EnterGroupPriceModal,
+    // EnterGroupPriceLoading,
+    // StopPrivateStream
+    GiveGift
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
 }
 </style>
