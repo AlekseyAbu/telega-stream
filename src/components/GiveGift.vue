@@ -5,33 +5,33 @@
             <ul class="gifts">
                 <li class="gift gift-active">
                     <img class="gift-img" src="../assets/image.png">
-                    <p class="gift-price">100₽</p>
+                    <p class="gift-price gift-price-active">100 ₽</p>
                     <button class="gidt-send">Отправить</button>
                 </li>
                 <li class="gift">
                     <img class="gift-img" src="../assets/image.png">
                     <p class="gift-title">Шоколодка</p>
-                    <p class="gift-price">100₽</p>
+                    <p class="gift-price">100 ₽</p>
                 </li>
                 <li class="gift">
                     <img class="gift-img" src="../assets/image.png">
                     <p class="gift-title">Шоколодка</p>
-                    <p class="gift-price">100₽</p>
+                    <p class="gift-price">100 ₽</p>
                 </li>
                 <li class="gift">
                     <img class="gift-img" src="../assets/image.png">
                     <p class="gift-title">Шоколодка</p>
-                    <p class="gift-price">100₽</p>
+                    <p class="gift-price">100 ₽</p>
                 </li>
                 <li class="gift">
                     <img class="gift-img" src="../assets/image.png">
                     <p class="gift-title">Шоколодка</p>
-                    <p class="gift-price">100₽</p>
+                    <p class="gift-price">100 ₽</p>
                 </li>
                 <li class="gift">
                     <img class="gift-img" src="../assets/image.png">
                     <p class="gift-title">Шоколодка</p>
-                    <p class="gift-price">100₽</p>
+                    <p class="gift-price">100 ₽</p>
                 </li>
             </ul>
         </div>
@@ -67,17 +67,53 @@
             }
             .gifts{
                 padding: 0;
-                display: flex;
-                flex-flow: row wrap;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 10px;
                 .gift{
                     list-style-type: none;
-                    width: calc(25% - 30px);
-                    margin-right: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .gift-price{
+                        margin: 5px auto 0;
+                        font-family: SF Pro Display;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 12px;
+                        text-align: center;
+                        color: #15151E;
+                        opacity: 0.5;
+                    }
+                    .gift-title{
+                        margin: 0 auto;
+                        font-family: SF Pro Display;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 10px;
+                        line-height: 12px;
+                        text-align: center;
+                        color: #15151E;
+                    }
+                    .gift-price-active{
+                        margin: 0 auto 5px;
+                        color: #3790F5;
+                    }
                 }
                 .gift-active{
                     border: 1.5px solid #3790F5;
                     box-sizing: border-box;
                     border-radius: 13px;
+                }
+                .gidt-send{
+                    background: #3790F5;
+                    border-radius: 0px 0px 13px 13px;
+                    color: white;
+                    border: none;
+                    width: calc(100% + 3px);
+                    padding: 6px 0;
+                    margin-bottom: -1px;
                 }
             }
         }
